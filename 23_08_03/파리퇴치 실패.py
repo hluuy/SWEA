@@ -15,13 +15,13 @@ for t in range(1, T + 1):
                     if 0 <= ni < N and 0 <= nj < N:
                         a += lst[ni][nj]
             if M > 2:
-                ni, nj = M-i, j + 1
+                ni, nj = (N-M) // 2 + 1 , j + 1
                 if i < nj < M:
                     a += lst[ni][nj]
             if M > 2:
-                ni, nj = i + 1, M-i
+                ni, nj = i + 1, (N-M) // 2 + 1
                 if i< ni < M:
-                    a +=lst[ni][nj]
+                    a += lst[ni][nj]
             # if max_v < a:
             #     max_v = a
 
