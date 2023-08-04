@@ -110,9 +110,12 @@
 #         if j < i: # 왼쪽 아래
 #
 
-N = int(input())
-arr = [list(map(int, input().split()))for _ in range(N)]
-total1 = 0
-total2 = 0
-for i in range(N):
-    total1 += arr[i][i]
+# N = int(input())
+# arr = [list(map(int, input().split()))for _ in range(N)]
+# total1 = 0
+# total2 = 0
+# for i in range(N):
+#     total1 += arr[i][i]
+a = ''
+a += 'c'
+print(a)
