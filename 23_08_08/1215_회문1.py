@@ -3,11 +3,14 @@ for t in range(1, T + 1):
     N = int(input())
     lst = [input()for _ in range(8)]
     count = 0
+    a = N // 2
 
     for i in range(8):
         for p in range(8 - N + 1):
-            if 0 <= p < 8 - N + 1:
-                if (lst[i][p], lst[i][p + 1], lst[i][p + 2]) == (lst[i][p + N-1], lst[i][p + N - 2], lst[i][p + N - 3]):
+            for k in range(a):
+                if lst[i][p + k] == lst[i][p + N - 1 - k]:
+            # if 0 <= p < 8 - N + 1:
+            #     if (lst[i][p], lst[i][p + 1], lst[i][p + 2]) == (lst[i][p + N-1], lst[i][p + N - 2], lst[i][p + N - 3]):
                     count += 1
     for j in range(8):
         for q in range(8 - N + 1):
