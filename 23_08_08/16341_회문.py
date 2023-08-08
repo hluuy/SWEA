@@ -16,4 +16,4 @@ for t in range(1, T + 1):
                     for c in range(q, q + M):
                         result += lst[c][j]
 
-    print(result)
+    print(f'#{t} {result}')
