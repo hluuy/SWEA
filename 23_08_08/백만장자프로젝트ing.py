@@ -29,12 +29,4 @@ for t in range(1, T + 1):
             buy = 0
     print(sell)
 
-
-
-
-
-
-
-
-
     # print(f'#{t} {}')
