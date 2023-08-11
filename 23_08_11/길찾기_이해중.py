@@ -6,7 +6,7 @@ for _ in range(1, 11):
     for i in range(E):
         start_node = arr[i * 2] # 입력 받은 arr에서 출발 노드를 가져옴
         end_node = arr[i * 2 + 1] # 입력 받은 arr에서 도착 노드를 가져옴
-        road[start_node].append(end_node) # 각 노드에서 출발했을 때, 도착하는 노드들을 출발 노드 칸에 넣음
+        road[start_node].append(end_node) # 각 노드에서 출발했을 때, 도착하는 노드들을 출발 노드 칸에 추가함
         # 0에서 출발 했을 때, 도착 노드는 1, 2라서 road[0]에는 [1, 2]가 들어있고
         # 1에서 출발 했을 때, 도착 노드는 4, 3이라서 road[1]에는 [4, 3]이 들어있다.
 
