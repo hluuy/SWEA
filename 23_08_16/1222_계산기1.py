@@ -6,6 +6,7 @@ for t in range(1, 11):
         if item.isdecimal():
             result += int(item)
 
+<<<<<<< HEAD
     print(f'#{t} {result}')
 
     # for item in STR:
@@ -13,3 +14,6 @@ for t in range(1, 11):
     #         lst.append(int(item))
     # for i in lst:
     #     result += i
+=======
+    print(f'#{t} {result}')
+>>>>>>> f63221fc20ba2c0d19f065bfda1944b4497c9aca
