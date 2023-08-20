@@ -1,8 +1,8 @@
 def bfs(row, col, N):
     visited = [[0]*N for _ in range(N)] # visited 생성
     Q = [] # 큐 생성
-    di = [0, 1, 0 ,-1]      # 탐색을 위한 범위 지정
-    dj = [1, 0 ,-1, 0]
+    di = [0, 1, 0, -1]      # 탐색을 위한 범위 지정
+    dj = [1, 0, -1, 0]
     Q.append((row, col))    # 시작점 enq
     visited[row][col] = 1   # 시작점 도달표시
     while Q:                # 큐가 비워질 때 까지
